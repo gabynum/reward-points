@@ -4,7 +4,6 @@ Simple form for calculating reward points based on transactions.
 User enters transaction data in JSON array and clicks calculate.
 Reward point totals are displayed below, sorted by user and month.
 
-localhost:3000
 ### Startup
 1. npm i
 2. npm start
