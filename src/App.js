@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import LikeButton from './LikeButton';
+import RewardsPage from './RewardsPage';
 
 function App() {
   return (
     <div className="App">
-      
+      <RewardsPage />
     </div>
   );
 }
