@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { SAMPLE_TRANSACTIONS } from "./constants";
-import Data from "./Data";
+import DataDisplay from "./DataDisplay";
 import { parseTransactions } from "./helperFunctions";
 
 function handleClick(state, setState) {
@@ -41,7 +41,7 @@ export default function RewardsPage(props) {
         Calculate
       </button>
       <div>
-        <Data customerRecords={state.customerRecords} />
+        <DataDisplay customerRecords={state.customerRecords} />
       </div>
     </div>
   );

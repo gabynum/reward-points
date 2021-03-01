@@ -4,14 +4,26 @@ function cleanupJsonString(string) {
     .replaceAll('\'', '"');
 }
 
+// alternative function limits single points for purchases over $50 at $100
+// function calculatePoints(purchaseAmount) {
+//   if (purchaseAmount > 100) {
+//     return ((purchaseAmount - 100) * 2) + 50;
+//   } else if (purchaseAmount > 50) {
+//     return (purchaseAmount - 50);
+//   } else {
+//     return 0;
+//   }
+// }
+
 function calculatePoints(purchaseAmount) {
+  let points = 0;
   if (purchaseAmount > 100) {
-    return ((purchaseAmount - 100) * 2) + 50;
-  } else if (purchaseAmount > 50) {
-    return (purchaseAmount - 50);
-  } else {
-    return 0;
+    points += ((purchaseAmount - 100) * 2);
   }
+  if (purchaseAmount > 50) {
+    points += (purchaseAmount - 50);
+  }
+  return points;
 }
 
 export function parseTransactions(transactions) {

@@ -16,7 +16,7 @@ function buildPointsData(customerData, name) {
   return pointsData;
 }
 
-export default function Data(props) {
+export default function DataDisplay(props) {
   const { customerRecords } = props;
   
   return Object.keys(customerRecords)?.map((name) => {
@@ -31,6 +31,6 @@ export default function Data(props) {
   });
 }
 
-Data.propTypes = {
+DataDisplay.propTypes = {
   customerRecords: PropTypes.object
 };
