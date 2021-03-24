@@ -17,7 +17,7 @@ Reward point totals are displayed below, sorted by user and month.
 * Extracted functions for parsing incoming JSON and calculating rewards points into helperFunctions file
 * Stored example input in constants file
 * Implemented react useState to store user input and customer rewards data
-* Form takes a JSON array as input to simplifies the input for the user. The array gets wrapped in a JSON object before being parsed.
+* Form takes a JSON array as input to simplify the input for the user. The array gets wrapped in a JSON object before being parsed.
 
 ### Instruction Notes
 * The instructions state:
